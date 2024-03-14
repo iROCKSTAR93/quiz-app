@@ -11,7 +11,7 @@ const Quiz = () => {
     const [isdisable, setdisable] = useState(true);
 
     const getdata = async () => {
-        const response = await axios.get('https://quizapi.io/api/v1/questions?apiKey=9cOiQ7oEA6AiakUDiyajne3YgGKywt5sJMgFhCUW&limit=10');
+        const response = await axios.get('https://quizapi.io/api/v1/questions?apiKey=9cOiQ7oEA6AiakUDiyajne3YgGKywt5sJMgFhCUW&limit=10&category=Linux');
         console.log(response.data);
         if (response.data) {
             setData(response.data);
